@@ -1,0 +1,93 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+    width: 100vh;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: hsl(212, 21%, 14%);
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: 40px;
+}
+
+h2 {
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat";
+    font-weight: 500;
+}
+
+p{
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-family: "Montserrat";
+}
+
+
+.card {
+    width: 1440px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+}
+
+.image{
+    background-color: brown;
+    flex-basis: 25%;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.text {
+    background-color: white;
+    border-radius: 0px 15px 15px 0px;
+    flex-basis: 25%;
+    padding: 35px 35px 35px 35px;
+}
+
+.price {
+    color:hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-family: "Fraunces";
+    font-size: 40px;
+}
+
+.old-price {
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat";
+    text-decoration: line-through;
+    font-size: 15px;
+}
+
+.button {
+   color: hsl(30, 38%, 92%);
+   font-family: "Montserrat";
+   font-weight: 700;
+   background-color: hsl(158, 36%, 37%);
+   text-align: center;
+   text-decoration: none;
+   border-radius: 7px;
+}
+
+.attribution {
+    font-family: 'Montserrat';
+    margin-top: 15px;
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 750px) {
+    .image {
+        flex-basis: 50%;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .text {
+        flex-basis: 50%;
+        order: 1;
+        border-radius: 0px 0px 15px 15px;
+    }
+}
